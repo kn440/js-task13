@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title><style>
+/* Пример основных стилей */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+}
+
+.cart-items {
+    margin-top: 20px;
+}
+
+.cart-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #eee;
+}
+
+    </style>
+</head>
+
+<body class="body">
+    <section1>
+        <header class="header center">
+            <div class="header__left">
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                <a href="#"><img src="img/search.svg" alt="search"></a>
+            </div>
+            <nav class="header__right">
+                <label for="header__check"><img src="img/menu.svg" alt="menu"></label>
+                <a class="header__link-site" href="registration.html"><img src="img/reg.svg" alt="reg"></a>
+                <a class="header__link-site" href="Shopping_cart.html"><img src="img/cart.svg" alt="cart"></a>
+            </nav>
+        </header>
+    </section1>
+    <section2>
+        <div class="cat2c">
+
+            <nav class="cat2c__nav ">
+                <a href="# " class="cat2c__nav__link1">
+                    <div class="cat2c__nav__link1__text">
+                        <p class="cat2c__nav__link1__text__title">SHOPPING CART
+                        </p>
+                    </div>
+                </a>
+
+
+
+            </nav>
+
+        </div>
+    </section2>
+
+    <section3>
+        <div class="section3">
+            <!-- <div class="products">
+                Пример одного товара 
+                <div class="product">
+                    <h3>Product Title</h3>
+                    <p>Description of the product.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div> -->
+
+<!-- Раздел корзины -->
+
+<div class="cart-items">
+    <h2>Cart items</h2>
+    <ul class="cart-list">
+        
+    </ul>
+</div>
+
+            <!-- <div class="shop3c">
+                <div class="shop3c__box ">
+                    <div class="shop3c__box__item ">
+
+                        <a href="# " class="shop3c__box__item__link ">
+                            <img class="shop3c__box__item__link__img " src="img/Shop_CART/img.png " alt="tovar ">
+
+                        </a>
+                        <div class="shop3c__box__item__text">
+                            <p class="shop3c__box__item__text__title ">MANGO PEOPLE <br>T-SHIRT</p>
+                            <p class="shop3c__box__item__text__description ">Price:
+                                <span class="shop3c__box__item__text__description__color "> $300</span></p>
+                            <p class="shop3c__box__item__text__description ">Color: Red</p>
+                            <p class="shop3c__box__item__text__description ">Size: Xl</p>
+                            <p class="shop3c__box__item__text__description ">Quantity:
+                                <input class="shop3c__box__item__text__description__value" type="number" value="2"></p>
+                        </div>
+                        <svg class="shop3c__box__item__svg " width="18 " height="18 " viewBox="0 0 18 18 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                        <path d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848
+            0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831
+            0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342
+            17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z " fill="#575757 "/>
+                        </svg>
+
+                    </div>
+                    <div class="shop3c__box__item ">
+
+                        <a href="# " class="shop3c__box__item__link ">
+                            <img class="shop3c__box__item__link__img " src="img/Shop_CART/img2.png " alt="tovar ">
+
+                        </a>
+                        <div class="shop3c__box__item__text ">
+                            <p class="shop3c__box__item__text__title ">MANGO PEOPLE <br>T-SHIRT</p>
+                            <p class="shop3c__box__item__text__description ">Price:
+                                <span class="shop3c__box__item__text__description__color "> $300</span></p>
+                            <p class="shop3c__box__item__text__description ">Color: Red</p>
+                            <p class="shop3c__box__item__text__description ">Size: Xl</p>
+                            <p class="shop3c__box__item__text__description ">Quantity: <input class="shop3c__box__item__text__description__value" type="number" value="2"></p>
+                        </div>
+                        <svg class="shop3c__box__item__svg " width="18 " height="18 " viewBox="0 0 18 18 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                        <path d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848
+            0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831
+            0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342
+            17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z " fill="#575757 "/>
+                    </svg>
+
+                    </div>
+
+                    <div class="shop3c__box__button ">
+                        <button class="shop3c__box__button__cod "> CLEAR SHOPPING CART 
+                    </button>
+                        <button class="shop3c__box__button__cod "> CONTINUE SHOPPING 
+                    </button>
+                    </div>
+
+
+
+                </div>
+                <div class="shop3c__fbox ">
+                    <div class="shop3c__fbox__address">
+                        <p>
+                            <span class="shop3c__fbox__address__title">SHOPPING ADDRESS</span>
+                        </p>
+                        <form class="shop3c__fbox__address__input">
+                            <input class="shop3c__fbox__address__input__text" type="text" placeholder="Bangladesh">
+                        </form>
+                        <form class="shop3c__fbox__address__input">
+                            <input class="shop3c__fbox__address__input__text" type="text" placeholder="State">
+                        </form>
+                        <form class="shop3c__fbox__address__input">
+                            <input class="shop3c__fbox__address__input__text" type="text" placeholder="Postcode / Zip">
+                        </form>
+
+                        <div class="shop3c__fbox__address__button">
+                            <button class="shop3c__fbox__address__button__cod"> GET A QUOTE
+                        </button>
+
+                        </div>
+
+                    </div>
+                    <div class="shop3c__fbox__cart">
+
+
+                        <div class="shop3c__fbox__cart__text">
+                            <p>
+                                <span class="shop3c__fbox__cart__text__subtitle">SUB TOTAL   $900</span></p>
+                            <p><span class="shop3c__fbox__cart__text__title"></span>GRAND TOTAL $900</span</p>
+                        </div>
+                        <div class="shop3c__fbox__cart__button">
+                            <button class="shop3c__fbox__cart__button__cod"> PROCEED TO CHECKOUT
+                        </button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div> -->
+            </div>
+    </section3>
+    <script>var userDataString = localStorage.getItem('addcart');
+        var userData = JSON.parse(userDataString);
+        const cartList = document.querySelector('.cart-list');
+        const cartItem = document.createElement('li');
+        cartItem.classList.add('cart-item');
+        cartItem.innerHTML = `
+            <div>
+                
+                <img src="${userData.image}"></img>
+                <p>${userData.name}</p>
+                <p>${userData.description}</p>
+                <p>${userData.price}</p>
+               
+            </div>
+            <button class="remove-from-cart">Remove</button>
+        `;
+        cartList.appendChild(cartItem);
+        const removeBtn = cartItem.querySelector('.remove-from-cart');
+        removeBtn.addEventListener('click', () => {
+            cartItem.remove();
+            if (cartList.children.length === 0) {
+                document.querySelector('.cart-list').style.display = 'none';
+            }
+        })
+        console.log('Имя:',userData.name);
+    </script>
+
+    
+
+
+    <section8>
+
+        <div class="s8container">
+            <img class="s8container__img" src="img/s8/subscribe.jpg " alt="SUBSCRIBE ">
+            <div class="s8container__sub1">
+                <img src="img/s8/Layer40.png " alt="s8img " class="s8container__sub1__img">
+                <div class="s8container__sub1__text">
+                    <p class="s8container__sub1__text__sub">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                        <span>a pulvinar purus condimentum“ </span>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section8>
+    <footer>
+        <container class="footer-container ">
+            <a href="# " class="footer-container__link "><svg class="footer-container__link__svg " width="17 " height="16 " viewBox="0 0 17 16 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                    <g clip-path="url(#clip0_190_1902) ">
+                    <path d="M14.4179 4.741C14.428 4.88313 14.428 5.02529 14.428 5.16741C14.428 9.50241 11.1507 14.4973 5.16084 14.4973C3.31546 14.4973 1.6012 13.9593 0.15918 13.0253C0.421373 13.0557 0.673447 13.0659 0.945728 13.0659C2.46839 13.0659
+            3.87008 12.5481 4.98941 11.6649C3.55748 11.6344 2.35748 10.6903 1.94403 9.39075C2.14573 9.42119 2.34739 9.4415 2.55918 9.4415C2.8516 9.4415 3.14406 9.40088 3.41631 9.32985C1.92388 9.02525 0.804528 7.70547 0.804528 6.11157V6.07097C1.23812 6.31463
+            1.74236 6.46691 2.27678 6.48719C1.39947 5.89835 0.824704 4.89329 0.824704 3.75622C0.824704 3.1471 0.986018 2.58872 1.26839 2.10141C2.87175 4.09125 5.28183 5.39072 7.98431 5.53288C7.9339 5.28922 7.90364 5.03544 7.90364 4.78163C7.90364 2.9745 9.35574
+            1.50244 11.1608 1.50244C12.0986 1.50244 12.9456 1.89838 13.5406 2.53797C14.2767 2.39585 14.9826 2.12172 15.6078 1.7461C15.3658 2.50754 14.8515 3.14713 14.1759 3.55319C14.8313 3.48216 15.4666 3.29938 16.0515 3.0456C15.6079 3.69532 15.0532 4.27397
+            14.4179 4.741Z " fill="black "/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_190_1902 ">
+                    <rect width="15.8924 " height="16 " fill="white " transform="translate(0.15918) "/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+
+                    </a>
+            <a href="# " class="footer-container__link "><svg class="footer-container__link__svg " width="16 " height="17 " viewBox="0 0 16 17 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                    <g clip-path="url(#clip0_190_1898) ">
+                    <path d="M8.13677 4.68159C6.02163 4.68159 4.31555 6.38491 4.31555 8.49663C4.31555 10.6083 6.02163 12.3117 8.13677 12.3117C10.2519 12.3117 11.958 10.6083 11.958 8.49663C11.958 6.38491 10.2519 4.68159 8.13677 4.68159ZM8.13677 10.9769C6.76991
+            10.9769 5.65248 9.8646 5.65248 8.49663C5.65248 7.12866 6.76658 6.01636 8.13677 6.01636C9.50695 6.01636 10.6211 7.12866 10.6211 8.49663C10.6211 9.8646 9.50363 10.9769 8.13677 10.9769ZM13.0056 4.52554C13.0056 5.02026 12.6065 5.41538 12.1143 5.41538C11.6188
+            5.41538 11.223 5.01694 11.223 4.52554C11.223 4.03413 11.6221 3.63569 12.1143 3.63569C12.6065 3.63569 13.0056 4.03413 13.0056 4.52554ZM15.5364 5.42866C15.4799 4.23667 15.2072 3.18081 14.3325 2.31089C13.4612 1.44097 12.4036 1.1687 11.2097 1.10894C9.9792
+            1.03921 6.29101 1.03921 5.0605 1.10894C3.8699 1.16538 2.81233 1.43765 1.93768 2.30757C1.06302 3.17749 0.793639 4.23335 0.733776 5.42534C0.663937 6.65386 0.663937 10.3361 0.733776 11.5646C0.790313 12.7566 1.06302 13.8124 1.93768 14.6824C2.81233
+            15.5523 3.86658 15.8246 5.0605 15.8843C6.29101 15.9541 9.9792 15.9541 11.2097 15.8843C12.4036 15.8279 13.4612 15.5556 14.3325 14.6824C15.2039 13.8124 15.4766 12.7566 15.5364 11.5646C15.6063 10.3361 15.6063 6.65718 15.5364 5.42866ZM13.9468 12.8828C13.6874
+            13.5335 13.1852 14.0349 12.53 14.2972C11.5489 14.6857 9.22094 14.596 8.13677 14.596C7.05259 14.596 4.72128 14.6824 3.74353 14.2972C3.09169 14.0382 2.58951 13.5369 2.32678 12.8828C1.93768 11.9033 2.02747 9.57905 2.02747 8.49663C2.02747 7.41421
+            1.941 5.08667 2.32678 4.1105C2.58619 3.45972 3.08837 2.95835 3.74353 2.69604C4.72461 2.30757 7.05259 2.39722 8.13677 2.39722C9.22094 2.39722 11.5523 2.31089 12.53 2.69604C13.1818 2.95503 13.684 3.4564 13.9468 4.1105C14.3359 5.08999 14.2461 7.41421
+            14.2461 8.49663C14.2461 9.57905 14.3359 11.9066 13.9468 12.8828Z " fill="white "/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_190_1898 ">
+                    <rect width="14.8991 " height="17 " fill="white " transform="translate(0.683838) "/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                    </a>
+            <a href="# " class="footer-container__link "><svg class="footer-container__link__svg " width="13 " height="16 " viewBox="0 0 13 16 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                    <g clip-path="url(#clip0_190_1906) ">
+                    <path d="M6.74008 0.203125C3.55539 0.203125 0.407959 2.34063 0.407959 5.8C0.407959 8 1.63713 9.25 2.38209 9.25C2.68938 9.25 2.86631 8.3875 2.86631 8.14375C2.86631 7.85313 2.13067 7.23438 2.13067 6.025C2.13067 3.5125 4.0303 1.73125
+            6.48865 1.73125C8.60246 1.73125 10.1669 2.94062 10.1669 5.1625C10.1669 6.82187 9.50572 9.93437 7.36398 9.93437C6.59109 9.93437 5.92994 9.37187 5.92994 8.56563C5.92994 7.38438 6.74939 6.24062 6.74939 5.02187C6.74939 2.95312 3.83475 3.32812 3.83475
+            5.82812C3.83475 6.35313 3.89994 6.93437 4.13273 7.4125C3.70439 9.26875 2.82906 12.0344 2.82906 13.9469C2.82906 14.5375 2.91287 15.1188 2.96874 15.7094C3.07428 15.8281 3.02151 15.8156 3.18292 15.7563C4.74732 13.6 4.69145 13.1781 5.39916 10.3562C5.78095
+            11.0875 6.76801 11.4812 7.55022 11.4812C10.8466 11.4812 12.3272 8.24688 12.3272 5.33125C12.3272 2.22813 9.66403 0.203125 6.74008 0.203125Z " fill="black "/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_190_1906 ">
+                    <rect width="11.9193 " height="16 " fill="white " transform="translate(0.407959) "/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                    </a>
+            <a href="# " class="footer-container__link "><svg class="footer-container__link__svg " width="11 " height="16 " viewBox="0 0 11 16 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                    <path d="M9.08836 8.28L9.50686 5.61602H6.89022V3.88729C6.89022 3.15847 7.25574 2.44806 8.42765 2.44806H9.61722V0.179975C9.61722 0.179975 8.53772 0 7.50561 0C5.35073 0 3.9422 1.27593 3.9422 3.5857V5.61602H1.54688V8.28H3.9422V14.72H6.89022V8.28H9.08836Z
+            " fill="black "/>
+                    </svg>
+                    </a>
+        </container>
+        <div class="footer-text ">© 2021 Brand All Rights Reserved.</div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+$widthS1:1600px;
+$heightS1:75px;
+$widthS2:1600px;
+$heightS2:764px;
+$widthS3:1140px;
+$heightS3:260px;
+$widthS4:1140px;
+$heightS4:180px;
+$widthS5:1600px;
+$heightS5:none;
+$widthS6:1140px;
+$heightS6:none;
+$widthS7:1600px;
+$heightS7:340px;
+$widthS8:1600px;
+$heightS8:none;
+$widthFC:1600px;
+$heightFC:113px;
+$widthFT:1600px;
+$heightFT:30px;
+$widthC2:1600px;
+$heightC2:148px;
+$widthArr3s:1141px;
+$heightArr3s:148px;
+$widthC3:1600px;
+$heightC3:777px;
+$widthC4:1141px;
+$heightC4:601px;
+$colorS1:#222;
+$colorS2:#F1E4E6;
+$colorS7:#222224;
+$colorFC:#222224;
+@mixin ParamWHM($w, $h, $ml, $mr, $mt, $mb) {
+    width: $w;
+    height: $h;
+    margin-left: $ml;
+    margin-right: $mr;
+    margin-top: $mt;
+    margin-bottom: $mb;
+}
+
+@mixin ParamText($c, $ff, $fs, $fw, $p, $ta) {
+    color: $c;
+    font-family: $ff;
+    font-size: $fs;
+    font-weight: $fw;
+    position: $p;
+    text-align: $ta;
+}
+
+@mixin ParamPosition($p, $d, $jc, $ai) {
+    position: $p;
+    display: $d;
+    justify-content: $jc;
+    align-items: $ai;
+}

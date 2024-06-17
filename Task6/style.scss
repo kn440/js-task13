@@ -1,0 +1,1133 @@
+        @import 'vars';
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        summary {
+            display: block;
+        }
+        
+        summary::-webkit-details-marker {
+            display: none
+        }
+        
+        .body {
+            font-family: 'Lato', sans-serif;
+        }
+        
+        .center {
+            padding-left: calc(35% - 570px);
+            padding-right: calc(35% - 570px);
+        }
+        
+        .header {
+            @include ParamWHM($widthS1, $heightS1, none, none, none, none);
+            min-height: 75px;
+            background: #222222;
+            @include ParamPosition(none, flex, space-between, center);
+            flex-direction: row;
+            flex-wrap: wrap;
+            &__left {
+                display: flex;
+                align-items: center;
+                gap: 41px;
+            }
+            &__right {
+                display: flex;
+                gap: 33px;
+            }
+        }
+        
+        .s2container {
+            background-color: $colorS2;
+            @include ParamWHM($widthS2, $heightS2, 0px, none, none, none);
+            @include ParamPosition(none, flex, space-between, none);
+            &__img {}
+            &__text {
+                @include ParamWHM(none, 93px, none, 331px, 290px, none);
+                border-left: 10px solid #F16D7F;
+                &__title {
+                    @include ParamText(#222, Lato, 48px, 900, none, none);
+                    padding-left: 10px;
+                }
+                &__subtitle {
+                    @include ParamText(#222, Lato, 32px, 700, none, none);
+                    padding-left: 10px;
+                    &__color {
+                        color: #F16D7F;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+        
+        .s3container {
+            @include ParamWHM($widthS3, $heightS3, 230px, 230px, 70px, 25px);
+            @include ParamPosition(none, flex, space-between, none);
+            &__sub {
+                width: 369.9px;
+                &__link {
+                    width: 369.9px;
+                    height: 260px;
+                    @include ParamPosition(absolute, flex, center, center);
+                    &__text {
+                        @include ParamText(#FFF, Lato, 16px, 400, none, center);
+                        &__color {
+                            color: #F16D7F;
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .s4container {
+            @include ParamWHM($widthS4, $heightS4, 230px, 230px, none, none);
+            &__link {
+                width: $widthS4;
+                height: $heightS4;
+                @include ParamPosition(absolute, flex, center, center);
+                &__text {
+                    width: 159.7250px;
+                    height: 50px;
+                    @include ParamText(#FFF, Lato, 16px, 400, none, center);
+                    &__color {
+                        color: #F16D7F;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+        
+        .s5container {
+            @include ParamWHM($widthS5, $heightS5, none, none, 100px, none);
+            @include ParamPosition(none, flex, center, none);
+            &__text {
+                &__title {
+                    @include ParamText(#222, Lato, 30px, 400, none, center);
+                }
+                &__subtitle {
+                    @include ParamText(#9F9F9F, Lato, 14px, 400, none, center);
+                    margin-top: 3.3px;
+                }
+            }
+        }
+        
+        .s6container {
+            @include ParamWHM($widthS6, $heightS6, 230px, 230px, 30px, none);
+            display: grid;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            grid-template-columns: repeat(3, 360px);
+            grid-auto-flow: dense;
+            &__link {
+                &__text {
+                    @include ParamText(#222, Lato, 13px, 400, none, center);
+                    margin-top: 24px;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+        
+        .button {
+            @include ParamWHM(212px, 48px, 689px, 89px, 40px, none);
+            @include ParamText(#F16D7F, none, 16px, 400, none, center);
+            border: 1px solid #F16D7F;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            border: 1px solid #F16D7F;
+            line-height: 19px;
+            color: #F16D7F;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            gap: 22px;
+            -webkit-transition: all 1s;
+            transition: all 1s;
+        }
+        
+        .s7container {
+            @include ParamWHM($widthS7, $heightS7, none, none, 50px, none);
+            @include ParamPosition(none, flex, space-evenly, none);
+            background-color: $colorS7;
+            &__sub {
+                background-color: $colorS7;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                @include ParamPosition(none, flex, space-evenly, center);
+                flex-direction: column;
+                &__ img {
+                    width: 43.467px;
+                    height: 30.854px;
+                }
+                &__title {
+                    @include ParamText(#FBFBFB, Lato, 19.9px, 400, none, none);
+                }
+                &__subtitle {
+                    width: 347.82px;
+                    height: 32.85px;
+                    @include ParamText(#FBFBFB, Lato, 13.9px, 300, none, center);
+                }
+            }
+        }
+        
+        .s8container {
+            @include ParamWHM($widthS8, $heightS8, none, none, none, none);
+            @include ParamPosition(none, grid, none, center);
+            flex-wrap: wrap;
+            grid-template-columns: repeat(2, 700px);
+            grid-auto-flow: dense;
+            &__img {
+                width: 1600px;
+                height: 448px;
+            }
+            &__sub1 {
+                @include ParamWHM(700.9px, 260px, none, none, none, none);
+                @include ParamPosition(absolute, flex, space-evenly, center);
+                flex-direction: column;
+                &__img {
+                    @include ParamWHM(96px, 96px, none, none, none, none);
+                    border-radius: 48px;
+                    fill: url(img/s8/Layer40.png), lightgray -23.21px -9.947px / 150.602% 156.627% no-repeat;
+                }
+                &__text {
+                    width: 343px;
+                    height: 73px;
+                    flex-shrink: 0;
+                    &__sub {
+                        @include ParamText(#222224, Lato, 18px, 400, none, center);
+                        span {
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .footer-container {
+            @include ParamWHM($widthFC, $heightFC, none, none, none, none);
+            @include ParamPosition(none, flex, center, none);
+            background-color: $colorFC;
+            &__link {
+                @include ParamWHM(31.451px, 32px, 10px, none, 43px, none);
+                @include ParamPosition(none, flex, center, center);
+                background-color: #FFF;
+                &__svg:hover path {
+                    fill: blue;
+                }
+            }
+            &__link:nth-child(2) {
+                background-color: #F16D7F;
+            }
+        }
+        
+        .footer-text {
+            @include ParamWHM($widthFT, $heightFT, none, none, none, none);
+            @include ParamText(#FBFBFB, Lato, 16px, 400, none, center);
+            background-color: #222224;
+        }
+        
+        .cat2c {
+            @include ParamWHM($widthC2, $heightC2, 0px, none, none, none);
+            background-color: #F8F3F4;
+            @include ParamPosition(none, flex, center, center);
+            &__nav {
+                @include ParamWHM(1140px, 70px, 0px, none, none, none);
+                @include ParamPosition(none, flex, space-between, center);
+                &__link1 {
+                    &__text {
+                        &__title {
+                            @include ParamText(#636363, Lato, 24px, 400, none, none);
+                        }
+                        &__title:hover {
+                            @include ParamText(#F16D7F, Lato, 24px, 400, none, none);
+                        }
+                    }
+                }
+                &__link2 {
+                    &__text {
+                        &__subtitle {
+                            @include ParamText(#636363, Lato, 14px, 300, none, none);
+                            &__color {
+                                @include ParamText( #F16D7F, Lato, 14px, 700, none, none);
+                            }
+                        }
+                        &__subtitleHome:hover {
+                            @include ParamText(#F16D7F, Lato, 14px, 300, none, none);
+                        }
+                        &__subtitleMen:hover {
+                            @include ParamText(#F16D7F, Lato, 14px, 300, none, none);
+                        }
+                    }
+                }
+            }
+        }
+        /*registration*/
+        
+        .REGISTRATION {
+            width: 1600px;
+            display: flex;
+            margin-bottom: 100px;
+            &__box {
+                height: auto;
+                background-color: #FFF;
+                &__item {
+                    width: 362px;
+                    height: 450px;
+                    margin-top: 64px;
+                    margin-left: 230px;
+                    margin-bottom: 36px;
+                    &__title {
+                        @include ParamText(#222, Lato, 16px, 300, none, none);
+                        padding-bottom: 5px;
+                    }
+                    &__input {
+                        margin-top: 20px;
+                        width: 360px;
+                        height: 45px;
+                        border: 1px solid #A4A4A4;
+                        &__text {
+                            width: 358px;
+                            height: 43px;
+                            padding: 14px;
+                            border: 0;
+                        }
+                        &__text::-webkit-input-placeholder {
+                            @include ParamText(#B1B1B1, Lato, 13px, 300, none, none);
+                        }
+                    }
+                    &__radio {
+                        margin-top: 34px;
+                        margin-bottom: 33px;
+                        display: flex;
+                        gap: 10px;
+                        justify-content: flex-start;
+                        align-items: center;
+                        @include ParamText(#000, Lato, 11px, 300, none, none);
+                    }
+                    &__block {
+                        margin-top: 15px;
+                        &__subtext {
+                            @include ParamText(#B1B1B1, Lato, 13px, 300, none, none);
+                        }
+                    }
+                    &__button {
+                        margin-top: 35px;
+                        margin-right: 43px;
+                        width: 167px;
+                        height: 50px;
+                        background-color: #F16D7F;
+                        &__cod {
+                            width: 167px;
+                            height: 50px;
+                            background-color: #F16D7F;
+                            display: flex;
+                            justify-content: space-evenly;
+                            ;
+                            align-items: center;
+                            padding: 8px;
+                            border: 0;
+                            @include ParamText( #FFF, Lato, 14px, 400, none, center);
+                        }
+                    }
+                }
+            }
+            &__fbox {
+                background-color: #FFF;
+                &__item {
+                    width: 652px;
+                    height: 450px;
+                    margin-top: 64px;
+                    margin-left: 230px;
+                    margin-bottom: 36px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 21px;
+                    &__text {
+                        &__title {
+                            @include ParamText(#000, Lato, 24px, 300, none, none);
+                        }
+                        &__subtitle {
+                            @include ParamText(#000, Lato, 24px, 300, none, none);
+                        }
+                    }
+                }
+            }
+        }
+        /*Shoping cart*/
+        
+        .shop3c {
+            width: 1370px;
+            height: 1000px;
+            display: flex;
+            justify-content: space-between;
+            &__box {
+                margin-top: 66px;
+                height: auto;
+                background-color: #FFF;
+                &__item {
+                    width: 652px;
+                    height: 306px;
+                    margin-top: 36px;
+                    margin-left: 230px;
+                    margin-bottom: 36px;
+                    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+                    display: grid;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    grid-template-columns: repeat(3, 31px);
+                    grid-auto-flow: dense;
+                    &__link {
+                        width: 262px;
+                        height: 306px;
+                        &__img:hover {
+                            filter: sepia(15%) brightness(30%);
+                        }
+                    }
+                    &__text {
+                        padding-top: 22px;
+                        width: 390px;
+                        height: 306px;
+                        &__title {
+                            @include ParamText(#222, Lato, 24px, 400, none, none);
+                            padding-bottom: 50px;
+                        }
+                        &__title:hover {
+                            color: #EF5B70;
+                        }
+                        &__description {
+                            @include ParamText(#575757, Lato, 22px, 400, none, none);
+                            padding-bottom: 6px;
+                            &__color {
+                                color: #EF5B70;
+                            }
+                            &__value {
+                                width: 44px;
+                                @include ParamText(#656565, Lato, 18px, 400, none, none);
+                                padding-left: 16px;
+                                margin-left: 24px;
+                            }
+                        }
+                    }
+                    &__svg {
+                        margin-top: 24px;
+                    }
+                }
+                &__item:hover {
+                    box-shadow: 0 5px 8px rgba(175, 8, 8, 0.345);
+                }
+                &__button {
+                    margin-top: 36px;
+                    margin-left: 230px;
+                    margin-bottom: 36px;
+                    width: 652px;
+                    height: 306px;
+                    display: flex;
+                    justify-content: space-between;
+                    &__cod {
+                        @include ParamWHM(235px, 50px, none, none, none, none);
+                        @include ParamText(#000, Lato, 14px, 300, none, center);
+                        display: flex;
+                        border: 1px solid #A4A4A4;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #FFF;
+                        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+                    }
+                    &__cod:hover {
+                        box-shadow: 0 5px 8px rgba(175, 8, 8, 0.345);
+                        color: #EF5B70;
+                    }
+                }
+            }
+            &__fbox {
+                &__address {
+                    /*border: 2px dotted #50b2ff;*/
+                    margin-top: 120px;
+                    width: 360px;
+                    height: 300px;
+                    background-color: #FFF;
+                    &__title {
+                        @include ParamText(#222, Lato, 16px, 300, none, none);
+                    }
+                    &__input {
+                        margin-top: 21px;
+                        width: 360px;
+                        height: 45px;
+                        border: 1px solid #A4A4A4;
+                        &__text {
+                            width: 357px;
+                            height: 42px;
+                            padding: 14px;
+                            border: 0;
+                        }
+                        &__text::-webkit-input-placeholder {
+                            @include ParamText(#222, Lato, 14px, 400, none, none);
+                        }
+                    }
+                    &__button {
+                        margin-top: 21px;
+                        width: 101.408px;
+                        height: 35px;
+                        border: 1px solid #A4A4A4;
+                        &__cod {
+                            background-color: #FFF;
+                            padding: 8px;
+                            border: 0;
+                            @include ParamText(#4A4A4A, Lato, 11px, 300, none, center);
+                        }
+                        &__cod:hover {
+                            color: #EF5B70;
+                        }
+                    }
+                }
+                &__cart {
+                    margin-top: 57px;
+                    width: 360px;
+                    height: 214px;
+                    background-color: #F5F3F3;
+                    ;
+                    &__text {
+                        padding-top: 39px;
+                        gap: 21px;
+                        &__subtitle {
+                            padding-left: 217px;
+                            @include ParamText(#4A4A4A, Lato, 11px, 400, none, none);
+                        }
+                        &__title {
+                            padding-left: 153px;
+                            @include ParamText(#222, Lato, 16px, 300, none, center);
+                        }
+                    }
+                    &__button {
+                        margin-top: 35px;
+                        margin-left: 44px;
+                        margin-right: 43px;
+                        width: 273px;
+                        height: 50px;
+                        border: 1px solid #A4A4A4;
+                        background-color: #F16D7F;
+                        &__cod {
+                            width: 273px;
+                            height: 50px;
+                            background-color: #F16D7F;
+                            padding: 8px;
+                            border: 0;
+                            @include ParamText( #FFF, Lato, 16px, 300, none, center);
+                        }
+                        &__cod:hover {
+                            background-color: #FFF;
+                            color: #EF5B70;
+                        }
+                    }
+                }
+            }
+        }
+        /*Arrivals*/
+        
+        .arr3s {
+            @include ParamWHM($widthArr3s, $heightArr3s, 230px, 230px, 39px, none);
+            background-color: #FFF;
+            @include ParamPosition(none, flex, space-between, none);
+            &__details {
+                padding: 13px 16px 16px;
+                width: 360px;
+                box-sizing: border-box;
+                position: absolute;
+                &[open] {
+                    background: #FFF;
+                    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+                }
+                &[open] &__summary__filter {
+                    color: #F16D7F;
+                }
+                &[open] path {
+                    fill: #F16D7F;
+                }
+                &__summary {
+                    @include ParamPosition(none, flex, none, center);
+                    gap: 11px;
+                    &__filter {
+                        @include ParamText(#000, Lato, 14px, 600, none, center);
+                    }
+                }
+                &__content {
+                    padding: 19px;
+                    &__item {
+                        padding: 9px;
+                        &[open] &__head {
+                            color: #F16D7F;
+                        }
+                        &__head {
+                            @include ParamText(#6F6E6E, Lato, 14px, 400, none, none);
+                            padding: 8px 11px 11px 11px;
+                            border-bottom: 1px solid#EBEBEB;
+                            border-left: 5px solid #EF5B70;
+                        }
+                        &__box {
+                            padding: 19px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 11px;
+                        }
+                        &__link {
+                            @include ParamText(#6F6E6E, Lato, 14px, 400, none, none);
+                        }
+                        &__link:hover {
+                            color: #EF5B70;
+                        }
+                    }
+                }
+            }
+            &__sort {
+                padding: 13px 16px 16px 400px;
+                display: flex;
+                gap: 36px;
+                &__details {
+                    position: relative;
+                    &__summary {
+                        @include ParamPosition(none, flex, none, center);
+                        gap: 10px;
+                        &__head {
+                            @include ParamText( #6F6E6E, Lato, 14px, 400, none, none);
+                        }
+                    }
+                    &__box {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+                        background: #FFF;
+                        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+                        padding: 7px 30px 11px 9px;
+                        position: absolute;
+                        left: -9px;
+                        top: 21px;
+                        &__check {
+                            display: flex;
+                            gap: 9px;
+                            align-items: center;
+                            &__label {
+                                @include ParamText(#6F6E6E, Lato, 14px, 400, none, none);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .cat3c {
+            @include ParamWHM($widthC3, $heightC3, 0px, none, none, none);
+            background-color: #F7F7F7;
+            @include ParamPosition(none, flex, center, center);
+            &__img {}
+        }
+        
+        .cat4c {
+            @include ParamWHM($widthC4, $heightC4, 230px, 230px, -65px, none);
+            background-color: #FFF;
+            @include ParamPosition(none, flex, center, center);
+        }
+        
+        @media (min-width: 426px) and (max-width: 770px) {
+            .header {
+                @include ParamWHM(769px, $heightS1, none, none, none, none);
+            }
+            .s2container {
+                background-color: $colorS2;
+                @include ParamWHM(769px, 368px, 0px, none, none, none);
+                &__text {
+                    @include ParamWHM(360px, 78px, none, 33px, 100px, none);
+                    &__title {
+                        @include ParamText(#222, Lato, 44px, 900, none, none);
+                    }
+                    &__subtitle {
+                        @include ParamText(#222, Lato, 24px, 700, none, none);
+                    }
+                }
+            }
+            .s3container {
+                @include ParamWHM(739px, 165px, 15px, 15px, 70px, none);
+                &__sub {
+                    width: 235.973px;
+                    &__link {
+                        width: 235.973px;
+                        height: 165px;
+                        &__img {
+                            width: 235.973px;
+                            height: 165px;
+                        }
+                    }
+                }
+            }
+            .s4container {
+                @include ParamWHM(739px, 116px, 15px, 15px, none, none);
+                &__link {
+                    width: 739px;
+                    height: 116px;
+                    &__img {
+                        width: 739.581px;
+                        height: 116.043px;
+                    }
+                    &__text {
+                        width: 159.7250px;
+                        height: 50px;
+                    }
+                }
+            }
+            .s5container {
+                @include ParamWHM(769px, $heightS5, none, none, 50px, 50px);
+            }
+            .s6container {
+                @include ParamWHM(739px, $heightS6, 15px, 15px, 0px, none);
+                display: grid;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                grid-template-columns: repeat(2, 360px);
+                grid-auto-flow: dense;
+                &__link {
+                    &__text {
+                        @include ParamText(#222, Lato, 13px, 400, none, center);
+                        margin-top: 24px;
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+            .button {
+                @include ParamWHM(212px, 48px, 285px, none, none, none);
+            }
+            .s7container {
+                @include ParamWHM(768px, 610px, none, none, 50px, none);
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                &__sub {
+                    background-color: $colorS7;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                    &__ img {
+                        width: 43.467px;
+                        height: 30.854px;
+                    }
+                    &__title {
+                        margin-top: 10px;
+                        @include ParamText(#FBFBFB, Lato, 19.9px, 400, none, none);
+                    }
+                    &__subtitle {
+                        margin-top: 10px;
+                        width: 347.82px;
+                        height: 32.85px;
+                        @include ParamText(#FBFBFB, Lato, 13.9px, 300, none, center);
+                    }
+                }
+            }
+            .s8container {
+                @include ParamWHM(768px, $heightS8, none, none, none, none);
+                @include ParamPosition(none, flex, center, center);
+                &__img {
+                    width: 768px;
+                    height: 448px;
+                }
+            }
+            .footer-container {
+                @include ParamWHM(769px, 69px, none, none, none, none);
+                @include ParamPosition(none, flex, center, none);
+                background-color: $colorFC;
+                &__link {
+                    @include ParamWHM(31.451px, 32px, 10px, none, 21px, none);
+                    @include ParamPosition(none, flex, center, center);
+                    background-color: #FFF;
+                    &__svg:hover path {
+                        fill: blue;
+                    }
+                }
+                &__link:nth-child(2) {
+                    background-color: #F16D7F;
+                }
+            }
+            .footer-text {
+                @include ParamWHM(769px, 69px, none, none, none, none);
+                @include ParamText(#FBFBFB, Lato, 16px, 400, none, center);
+                background-color: #222224;
+            }
+            .cat2c {
+                @include ParamWHM( 768px, 148px, 0px, none, none, none);
+                &__nav__link1__text {
+                    margin-left: 16px;
+                }
+            }
+            .REGISTRATION {
+                width: 759px;
+                display: flex;
+                margin-bottom: 100px;
+                &__box {
+                    &__item {
+                        width: 362px;
+                        height: 450px;
+                        margin-top: 64px;
+                        margin-left: 16px;
+                        margin-bottom: 36px;
+                    }
+                }
+                &__fbox {
+                    &__item {
+                        width: 360px;
+                        height: 450px;
+                        margin-top: 64px;
+                        margin-left: 20px;
+                        margin-bottom: 36px;
+                        &__text {
+                            &__title {
+                                @include ParamText(#000, Lato, 16px, 300, none, none);
+                            }
+                            &__subtitle {
+                                @include ParamText(#000, Lato, 16px, 300, none, none);
+                            }
+                        }
+                    }
+                }
+            }
+            .shop3c {
+                width: 768px;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                &__box {
+                    height: 850px;
+                    &__item {
+                        width: 730px;
+                        margin-left: 16px;
+                        margin-bottom: 6px;
+                    }
+                }
+                &__button {
+                    margin-left: 70px;
+                    margin-right: 130px;
+                    margin-bottom: 6px;
+                    display: flex;
+                    justify-content: space-around;
+                }
+                &__fbox {
+                    margin-left: 16px;
+                    display: flex;
+                    flex-direction: row;
+                    &__address {
+                        margin-top: 0px;
+                    }
+                    &__cart {
+                        margin-top: 40px;
+                        margin-left: 16px;
+                        width: 360px;
+                        height: 214px;
+                    }
+                }
+            }
+            .arr3s {
+                @include ParamWHM(739px, $heightArr3s, 16px, 16px, 39px, none);
+            }
+            .cat3c {
+                @include ParamWHM(769px, $heightC3, 0px, none, none, none);
+                @include ParamPosition(none, flex, center, center);
+                &__img {
+                    width: 466px;
+                    height: 565px;
+                }
+            }
+            .cat4c {
+                @include ParamWHM(769px, $heightC4, 0px, 0px, 0px, 0px);
+            }
+        }
+        
+        @media screen and (max-width: 425px) {
+            .need-hide {
+                display: none;
+            }
+            .header {
+                width: 100vw;
+            }
+            .s2container {
+                @include ParamWHM(100vw, 363px, 0px, 0px, 0px, 0px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &__text {
+                    @include ParamWHM(none, 93px, none, 0px, 0px, none);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    &__title {
+                        @include ParamText(#222, Lato, 38px, 900, none, none);
+                    }
+                    &__subtitle {
+                        @include ParamText(#222, Lato, 20px, 700, none, none);
+                    }
+                }
+            }
+            .s3container {
+                @include ParamWHM(100vw, 247px, 0px, 0px, 200px, 0px);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 260px;
+                &__sub {
+                    &__link {
+                        height: 165px;
+                        &__img {
+                            width: 343px;
+                            height: 247px;
+                        }
+                    }
+                }
+            }
+            .s4container {
+                @include ParamWHM(100vw, 111px, 0px, 0px, 355px, none);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &__link {
+                    width: 343px;
+                    height: 111px;
+                    &__img {
+                        width: 343px;
+                        height: 111.043px;
+                    }
+                    &__text {
+                        width: 343px;
+                        height: 50px;
+                    }
+                }
+            }
+            .s5container {
+                @include ParamWHM(100vw, $heightS5, none, none, 50px, 50px);
+            }
+            .s6container {
+                @include ParamWHM(100vw, $heightS6, 15px, 15px, 0px, none);
+                display: grid;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                grid-template-columns: repeat(1, 100vw);
+                grid-auto-flow: dense;
+                &__link {
+                    &__img {
+                        width: 100vw;
+                    }
+                    &__text {
+                        @include ParamText(#222, Lato, 13px, 400, none, center);
+                        margin-top: 24px;
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+            .button {
+                @include ParamWHM(212px, 48px, 16px, none, none, none);
+            }
+            .s7container {
+                @include ParamWHM(100vw, 610px, none, none, 50px, none);
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                &__sub {
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                    &__ img {
+                        width: 43.467px;
+                        height: 30.854px;
+                    }
+                    &__title {
+                        margin-top: 10px;
+                        @include ParamText(#FBFBFB, Lato, 19.9px, 400, none, none);
+                    }
+                    &__subtitle {
+                        margin-top: 10px;
+                        width: 347.82px;
+                        height: 32.85px;
+                        @include ParamText(#FBFBFB, Lato, 13.9px, 300, none, center);
+                    }
+                }
+            }
+            .s8container {
+                @include ParamWHM(100vw, $heightS8, none, none, none, none);
+                @include ParamPosition(none, flex, center, center);
+                &__img {
+                    width: 100vw;
+                    height: 448px;
+                }
+            }
+            .footer-container {
+                @include ParamWHM(100vw, 69px, none, none, none, none);
+                &__link {
+                    margin-top: 20px;
+                }
+            }
+            .footer-text {
+                @include ParamWHM(100vw, 69px, none, none, -3px, none);
+                @include ParamText(#FBFBFB, Lato, 16px, 400, none, center);
+                background-color: #222224;
+            }
+            .cat2c {
+                @include ParamWHM( 100vw, 148px, 0px, none, none, none);
+                &__nav {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    &__link1__text {
+                        margin-left: 16px;
+                    }
+                }
+            }
+            .arr3s {
+                @include ParamWHM(100vw, $heightArr3s, 0px, 0px, 39px, none);
+                &__details__summary__filter__svg {
+                    width: 38px;
+                    height: 25px;
+                }
+                &__sort {
+                    padding: 13px 16px 16px 80px;
+                    gap: 15px;
+                    &__details {
+                        &__summary {
+                            &__head {
+                                @include ParamText( #6F6E6E, Lato, 12px, 400, none, none);
+                            }
+                        }
+                        &__box {
+                            &__check {
+                                &__label {
+                                    @include ParamText(#6F6E6E, Lato, 12px, 400, none, none);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .cat3c {
+                @include ParamWHM(100vw, 454px, 0px, none, none, none);
+                @include ParamPosition(none, flex, center, center);
+                &__img {
+                    width: 100vw;
+                }
+            }
+            .cat4c {
+                @include ParamWHM(100vw, 600px, 0px, 0px, 0px, 0px);
+            }
+            .REGISTRATION {
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-bottom: 100px;
+                &__box {
+                    &__item {
+                        width: 100vw;
+                        height: 450px;
+                        margin-top: 64px;
+                        margin-left: 8px;
+                        margin-bottom: 36px;
+                        &__input {
+                            margin-top: 20px;
+                            width: 360px;
+                            height: 45px;
+                        }
+                    }
+                }
+                &__fbox {
+                    &__item {
+                        width: 100vw;
+                        height: 350px;
+                        margin-left: 8px;
+                        margin-bottom: 6px;
+                    }
+                }
+            }
+            .shop3c {
+                width: 100vw;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px;
+                &__box {
+                    height: 100vw;
+                    margin-top: 0px;
+                    &__item {
+                        width: 96vw;
+                        height: 188px;
+                        margin-left: 6px;
+                        margin-bottom: 6px;
+                        &__link {
+                            width: 143.859px;
+                            height: 188px;
+                            &__img {
+                                width: 143.859px;
+                                height: 188px;
+                                flex-shrink: 0;
+                            }
+                        }
+                        &__text {
+                            padding-top: 13px;
+                            width: 214px;
+                            height: 188px;
+                            &__title {
+                                @include ParamText(#222, Lato, 16px, 400, none, none);
+                                padding-bottom: 13px;
+                            }
+                            &__description {
+                                @include ParamText(#575757, Lato, 14px, 400, none, none);
+                                padding-bottom: 6px;
+                                &__value {
+                                    width: 24px;
+                                    @include ParamText(#656565, Lato, 10px, 400, none, none);
+                                    padding-left: 16px;
+                                    margin-left: 24px;
+                                }
+                            }
+                        }
+                        &__svg {
+                            margin-top: 24px;
+                            width: 9.8px;
+                            height: 11px;
+                        }
+                    }
+                    &__button {
+                        width: 100vw;
+                        height: auto;
+                        margin-left: 6px;
+                        margin-right: 130px;
+                        margin-bottom: 6px;
+                        display: flex;
+                        justify-content: space-around;
+                        &__cod {
+                            width: 175px;
+                            height: 33px;
+                            @include ParamText(#222, Lato, 12px, 400, none, none);
+                        }
+                    }
+                }
+                &__fbox {
+                    margin-top: 150px;
+                    margin-left: 6px;
+                    display: flex;
+                    flex-direction: column;
+                    &__address {
+                        margin-top: 0px;
+                    }
+                    &__cart {
+                        margin-top: 40px;
+                        margin-left: 0px;
+                        width: 94vw;
+                        height: 214px;
+                        margin-bottom: 96px;
+                    }
+                }
+            }
+        }
